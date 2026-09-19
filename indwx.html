@@ -1,127 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TradeWithMunaaf</title>
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '27187832194150977');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=27187832194150977&ev=PageView&noscript=1"
-    /></noscript>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(180deg, #050a30 0%, #000c66 50%, #7ec8e3 100%);
-            height: 100vh;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: white;
-            text-align: center;
-        }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Trade With Munaf</title>
 
-        .card {
-            background-color: #111827;
-            width: 90%;
-            max-width: 400px;
-            padding: 40px 20px;
-            border-radius: 30px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
-        }
+<!-- ✅ META PIXEL (CORRECT PLACE) -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
 
-        .logo-container {
-            width: 120px;
-            height: 120px;
-            margin: 0 auto 20px;
-            border-radius: 50%;
-            background: white;
-            padding: 5px;
-        }
+fbq('init', '2463924694012992');
+fbq('track', 'PageView');
+</script>
 
-        .logo-container img {
-            width: 100%;
-            border-radius: 50%;
-        }
+<noscript>
+<img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2463924694012992&ev=PageView&noscript=1"/>
+</noscript>
 
-        h1 {
-            font-size: 24px;
-            margin-bottom: 25px;
-            font-weight: 700;
-        }
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0b0f14;
+  color: #fff;
+  text-align: center;
+}
 
-        .info-list {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 30px;
-            font-size: 16px;
-            line-height: 2;
-        }
+.container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+}
 
-        .btn {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background: linear-gradient(90deg, #7cf0e5, #49dcb1);
-            color: #000;
-            text-decoration: none;
-            padding: 15px;
-            border-radius: 40px;
-            font-weight: bold;
-            font-size: 20px;
-            margin-bottom: 25px;
-            gap: 10px;
-        }
+.card {
+  background: #11161c;
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 0 25px rgba(0,255,255,0.08);
+}
 
-        .footer-text {
-            font-size: 13px;
-            color: #9ca3af;
-        }
+.profile {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid orange;
+  margin: auto;
+  background: url('https://via.placeholder.com/150') center/cover;
+}
 
-        .footer-text a {
-            color: #49dcb1;
-            text-decoration: none;
-        }
-    </style>
+h1 {
+  color: #ffc107;
+  margin-top: 15px;
+  font-size: 28px;
+}
+
+.badge {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #ccc;
+}
+
+.btn {
+  display: block;
+  margin: 10px auto;
+  padding: 12px;
+  border-radius: 12px;
+  background: #1e242b;
+  color: #fff;
+  border: none;
+  width: 80%;
+  font-size: 16px;
+}
+
+@keyframes glowPulse {
+  0% { box-shadow: 0 0 10px rgba(0,200,255,0.4); }
+  50% { box-shadow: 0 0 30px rgba(0,200,255,1), 0 0 60px rgba(0,200,255,0.7); }
+  100% { box-shadow: 0 0 10px rgba(0,200,255,0.4); }
+}
+
+.telegram-btn {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: #fff;
+  font-weight: bold;
+  font-size: 18px;
+  padding: 15px;
+  border-radius: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+  animation: glowPulse 1.5s infinite;
+  transition: 0.2s;
+}
+
+.telegram-btn:active {
+  transform: scale(0.95);
+}
+
+.countdown {
+  background: #1a1f25;
+  padding: 15px;
+  border-radius: 15px;
+  margin: 15px 0;
+  color: #ccc;
+}
+
+.features {
+  text-align: left;
+  margin-top: 15px;
+}
+
+.feature {
+  background: #1a1f25;
+  padding: 12px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 35px;
+}
+
+@keyframes checkGlow {
+  0% { box-shadow: 0 0 5px #00ff99; }
+  50% { box-shadow: 0 0 20px #00ff99, 0 0 40px #00ff99; }
+  100% { box-shadow: 0 0 5px #00ff99; }
+}
+
+.feature::before {
+  content: "✔";
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #00ff99;
+  background: rgba(0,255,153,0.1);
+  border-radius: 50%;
+  padding: 5px;
+  animation: checkGlow 1.5s infinite;
+}
+
+.note {
+  font-size: 12px;
+  color: #888;
+  margin-top: 10px;
+}
+</style>
 </head>
+
 <body>
 
-<div class="card">
-    <div class="logo-container">
-        <img src="https://via.placeholder.com/120x120/FFD700/000000?text=TRADER+MUNAAF" alt="Logo">
-    </div>
+<div class="container">
+  <div class="card">
 
-    <h1>TradeWithMunaaf₹</h1>
-
-    <div class="info-list">
-        <div>📊 NIFTY · BANKNIFTY · SENSEX</div>
-        <div>✅ DAILY CALLS AVAILABLE</div>
-        <div>⭐ 95% Accuracy</div>
-        <div>🎯 6+ Years Experience</div>
-    </div>
-
-    <a href="https://t.me/+WIi2hGzsTJoyYTk1" class="btn">
-        <img src="https://cdn-icons-png.flaticon.com/512/2111/2111646.png" width="25" alt="TG">
-        Join Telegram
-    </a>
-
-    <div class="footer-text">
-        Contact Only For Ads Setup 👑<br>
-        Ads Managed By <a href="https://t.me/+jE7sEbzR23gwM2U1">Kunal</a>
-    </div>
+    <div class="profile">
+  <img src="logo.png" width="120" style="border-radius:50%;">
 </div>
 
+    <h1>Trade With Munaf™️</h1>
+
+    <div class="badge">✅ Trusted by thousands of learners</div>
+
+    <button class="btn">24/7 Updates</button>
+    <button class="btn">Free to Join</button>
+
+    <div class="countdown">
+      Auto joining in <span id="timer">7</span> seconds...<br>
+      If not opened, click below 👇
+    </div>
+
+    <!-- ✅ BUTTON WITH TRACKING -->
+    <div class="telegram-btn" onclick="joinNow()">
+      Join Telegram
+    </div>
+
+    <div class="features">
+      <div class="feature">Market Insights & Discussions</div>
+      <div class="feature">Learn with Experts</div>
+      <div class="feature">Practical Strategies</div>
+    </div>
+
+    <div class="note">
+      ⚠ Only serious learners join the Telegram channel.<br><br>
+      By joining, you agree to be contacted for updates.
+    </div>
+
+  </div>
+</div>
+
+<script>
+let timeLeft = 27;
+const timer = document.getElementById("timer");
+
+const countdown = setInterval(() => {
+  timeLeft--;
+  timer.textContent = timeLeft;
+
+  if (timeLeft <= 0) {
+    clearInterval(countdown);
+    joinNow();
+  }
+}, 1000);
+
+function joinNow() {
+  fbq('track', 'Lead'); // ✅ TRACK LEAD
+  window.location.href = "https://t.me/+GRLekH56FpZkYjA1".replace(" ", "");
+}
+</script>
+<div style="margin-top:10px;text-align:center;">
+<div style="color:#9ca3af;font-size:14px;">
+Meta Ads Setup ke liye DM karo
+</div>
+
+<div style="margin-top:4px;">
+Click 👉 
+<a href="https://t.me/+jE7sEbzR23gwM2U1" style="color:#00c6ff;font-weight:bold;text-decoration:none;">
+Kunal Ads Agency
+</a>
+</div>
+</div>
+</a>
+</div>
 </body>
 </html>
+
+
